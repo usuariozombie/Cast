@@ -1,7 +1,7 @@
 <h1 align="center">🌦️ Cast 🌦️</h1>
 <br/>
 <p align="center">
-<img src="https://github.com/usuariozombie/Cast/blob/master/src/icon.png" width=500>
+<img src="https://github.com/usuariozombie/Cast/blob/master/icon.png" width=500>
 </p>
 
 <br/>
