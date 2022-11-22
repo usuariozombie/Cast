@@ -19,7 +19,7 @@ class FORECAST(commands.Cog):
     
     @commands.command(help="🌡️ - It sends information about the selected location temperature.")
     async def weather(self ,ctx, *, location):
-        url = f'http://api.openweathermap.org/data/2.5/weather?q={location}&appid={"7745a414566393bd03c26c9f7b65a359"}&units=metric'
+        url = f'http://api.openweathermap.org/data/2.5/weather?q={location}&appid={"yourApiID"}&units=metric'
         try:
             data = parse_data(json.loads(requests.get(url).content)['main'])
             data2 = parse_data(json.loads(requests.get(url).content)['weather'])
