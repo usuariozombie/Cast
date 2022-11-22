@@ -40,4 +40,8 @@ To install the library without full voice support, you can just run the followin
     py -3 -m pip install -U nextcord
 
 
+Changing API key
+-------------------
+You will need an API key from [OpenWeatherMap](https://openweathermap.org/api) in order to run the bot commands, this is very important.
+
 <p><i><small>THIS IS A PRODUCT OF ZOMBREX ENTERTAINMENT, UNAUTHORIZED USE OF THIS WILL BE CONSIDERED ILLEGAL.</small></i></p>
