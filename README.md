@@ -44,4 +44,12 @@ Changing API key
 -------------------
 You will need an API key from [OpenWeatherMap](https://openweathermap.org/api) in order to run the bot commands, this is very important.
 
-<p><i><small>THIS IS A PRODUCT OF ZOMBREX ENTERTAINMENT, UNAUTHORIZED USE OF THIS WILL BE CONSIDERED ILLEGAL.</small></i></p>
+<div align="center">
+<img src="https://media.discordapp.net/attachments/931640602490187866/1044679643204157470/image.png?width=935&height=468">
+</div>
+
+<br/>
+<br/>
+<div align="center">
+<i><small>THIS IS A PRODUCT OF ZOMBREX ENTERTAINMENT, UNAUTHORIZED USE OF THIS WILL BE CONSIDERED ILLEGAL.</small></i>
+</div>
