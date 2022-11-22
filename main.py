@@ -41,6 +41,7 @@ with open("config.json") as jFile:
     jFile.close()
 PREFIX = data["prefix"]
 BOT_USER_ID = data["bot_user_id"]
+WAPIKEY = data["wAPIKEY"]
 
 
 print(ZomTitle)
