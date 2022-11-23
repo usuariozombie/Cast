@@ -1,5 +1,6 @@
 import nextcord
 
+
 color = 0xFF6500
 key_features = {
     'main' : 'Sky Condition',
@@ -11,8 +12,10 @@ key_features = {
     'pressure' : 'Pressure in Millibars'
 }
 
+
 def parse_data(data):
     return data
+
 
 def weather_message(data, location):
     location = location.title()
@@ -28,6 +31,7 @@ def weather_message(data, location):
             inline=True
         )
     return message
+
 
 def error_message(location):
     location = location.title()
