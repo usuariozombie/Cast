@@ -51,5 +51,5 @@ You will need an API key from [OpenWeatherMap](https://openweathermap.org/api) i
 <br/>
 <br/>
 <div align="center">
-<i><small>THIS IS A PRODUCT OF ZOMBREX ENTERTAINMENT, UNAUTHORIZED USE OF THIS WILL BE CONSIDERED ILLEGAL.</small></i>
+<i><small>THIS IS A PRODUCT OF ZOMBREX ENTERTAINMENT ©, UNAUTHORIZED USE OF THIS WILL BE CONSIDERED ILLEGAL.</small></i>
 </div>
