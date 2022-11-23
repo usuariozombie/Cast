@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # ︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾
-# 🤖 | ZomBot » Datos & Imports
+# ⛈️ | Cast » Datos & Imports
 # ︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽
 
 from unicodedata import name
@@ -28,7 +28,7 @@ ZomTitle = u"""\u001b[31m
 \u001b[0m"""
 
 # ︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾
-# 🤖 | ZomBot » Funciones
+# ⛈️ | Cast » Funciones
 # ︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽
 
 if os.name == 'posix':
@@ -50,7 +50,7 @@ print(ZomTitle)
 print(f"\u001b[33m[{datetime.now().strftime('%H:%M:%S')} INFO] » Connecting... \u001b[0m\n")
 
 # ︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾
-# 🤖 | ZomBot » Código Principal
+# ⛈️ | Cast » Código Principal
 # ︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽
 
 
@@ -73,7 +73,7 @@ async def on_ready():
     
 
 # ︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾︾
-# 🤖 | ZomBot » Cog commands
+# ⛈️ | Cast » Cog commands
 # ︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽︽
 
 
