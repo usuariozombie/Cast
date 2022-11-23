@@ -1,6 +1,8 @@
 {
+    
     "prefix": "?",
     "token": "BotToken",
     "bot_user_id": "BotID",
     "wAPIKEY": "OpenWeatherMap"
+    
 }
