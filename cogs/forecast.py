@@ -112,12 +112,8 @@ class FORECAST(commands.Cog):
     async def weatherforecast(self ,ctx, *, location, lang : str = nextcord.SlashOption(name="language",choices={"English": "en", "Spanish": "es", "French" : "fr"},)):
         try:
             locationrep = location.replace(" ", "_")
-<<<<<<< HEAD
             currtime = round(time.time()*1000)
-            url = f"https://wttr.in/{locationrep}_2qp_lang={lang}.png?m&{currtime}"
-=======
-            url = f"https://wttr.in/{locationrep}_3tqp_lang={lang}.png?m"
->>>>>>> eb133a6577d671812c6405652a566f131ef6eb19
+            url = (f"https://wttr.in/{locationrep}_2qp_lang={lang}.png?m&{currtime}" + "3")
             Fembed = nextcord.Embed(color=nextcord.Colour.random())
             Fembed.set_author(name=f'Weather in {location}', icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
             Fembed.set_footer(text=f"Requested by {ctx.user} • 3 days weather forecast")
