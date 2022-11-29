@@ -10,9 +10,10 @@ import nextcord, os, json, aiohttp, asyncio
 from nextcord.ext import commands
 from datetime import datetime
 
-with open("config.json") as jFile:
-	data = json.load(jFile)
-	jFile.close()
+with open("config.json", "r", encoding = "utf-8") as file: # Read
+    data = json.load(file)
+file.close()
+
 BotPrefix = data["prefix"]
 BotToken = data["token"]
 
