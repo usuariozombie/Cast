@@ -109,18 +109,52 @@ class FORECAST(commands.Cog):
             await ctx.send(embed=error_message(location))
     
     @nextcord.slash_command(description="🌡️ - It sends information about the selected location temperature.")
-    async def weatherforecast(self ,ctx, *, location, lang : str = nextcord.SlashOption(name="language",choices={"English": "en", "Spanish": "es", "French" : "fr"},)):
-        try:
-            locationrep = location.replace(" ", "_")
-            currtime = round(time.time()*1000)
-            url = (f"https://wttr.in/{locationrep}_2qp_lang={lang}.png?m&{currtime}" + "3")
-            Fembed = nextcord.Embed(color=nextcord.Colour.random())
-            Fembed.set_author(name=f'Weather in {location}', icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
-            Fembed.set_footer(text=f"Requested by {ctx.user} • 3 days weather forecast")
-            Fembed.set_image(url)
-            await ctx.send(embed=Fembed)
-        except KeyError:
-            await ctx.send(embed=error_message(location))
+    async def weatherforecast(self ,ctx, *, location, lang : str = nextcord.SlashOption(name="language",choices={"English": "en", "Spanish": "es", "French" : "fr"})):
+
+        locationrep = location.replace(" ", "_")
+        currtime = round(time.time()*1000)
+        url = (f"https://wttr.in/{locationrep}_2qp_lang={lang}.png?m&{currtime}" + "3")
+        url2 = (f"https://wttr.in/{locationrep}?format=j1")
+        statuscode = requests.get(url2).status_code
+        if lang=="fr":
+            if statuscode != 404:
+                Fembed = nextcord.Embed(color=nextcord.Colour.random())
+                Fembed.set_author(name=f'Temps en {location}', icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
+                Fembed.set_footer(text=f"Demandé par {ctx.user} • Prévisions météorologiques à 3 jours")
+                Fembed.set_image(url)
+                await ctx.send(embed=Fembed)
+            else:
+                error = nextcord.Embed(color=nextcord.Colour.red())
+                error.set_author(name=f"Une erreur s'est produite lors de la demande d'informations de {location}", icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
+                error.set_footer(text=f"Demandé par {ctx.user} • Il y a eu une erreur!")
+                error.set_image("https://thumbs.gfycat.com/BoldPertinentLaughingthrush-size_restricted.gif")
+                await ctx.send(embed=error)
+        elif lang=="en":
+            if statuscode != 404:
+                Fembed = nextcord.Embed(color=nextcord.Colour.random())
+                Fembed.set_author(name=f'Weather in {location}', icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
+                Fembed.set_footer(text=f"Requested by {ctx.user} • 3 days weather forecast")
+                Fembed.set_image(url)
+                await ctx.send(embed=Fembed)
+            else:
+                error = nextcord.Embed(color=nextcord.Colour.red())
+                error.set_author(name=f"An error occurred when requesting information from {location}", icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
+                error.set_footer(text=f"Requested by {ctx.user} • There was an error!")
+                error.set_image("https://thumbs.gfycat.com/BoldPertinentLaughingthrush-size_restricted.gif")
+                await ctx.send(embed=error)
+        else:
+            if statuscode != 404:
+                Fembed = nextcord.Embed(color=nextcord.Colour.random())
+                Fembed.set_author(name=f'Temperatura en {location}', icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
+                Fembed.set_footer(text=f"Solicitado por {ctx.user} • Predicción de 3 días")
+                Fembed.set_image(url)
+                await ctx.send(embed=Fembed)
+            else:
+                error = nextcord.Embed(color=nextcord.Colour.red())
+                error.set_author(name=f"Hubo un error recopilando información de {location}", icon_url='https://media.discordapp.net/attachments/887755071885045810/974341847344369694/8ce446f0e6f6e99dac3494b9b113c601.gif')
+                error.set_footer(text=f"Solicitado por {ctx.user} • ¡Hubo un error!")
+                error.set_image("https://thumbs.gfycat.com/BoldPertinentLaughingthrush-size_restricted.gif")
+                await ctx.send(embed=error)
     
         
 def setup(client):
