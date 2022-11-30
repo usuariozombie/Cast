@@ -35,6 +35,14 @@ News --> 1.2
 </div>
 <br/>
 
+News --> 1.3.1
+-------------------
+<br/>
+<div align="center">
+<img src="https://cdn.discordapp.com/attachments/931640602490187866/1047309715664814151/image.png">
+</div>
+<p align="center"><i>The bot now has an error handler and completely supports 3 different languages!</i></p>
+
 Requirements
 ------------
 
