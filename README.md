@@ -7,7 +7,7 @@
 <br/>
 <p>Cast is a Discord Bot project trying to give accurate weather information through Discord servers, right now is in development so it will need more time to be completely functional.</p>
 
-<p>At the moment, this Bot is giving real time weather forecasts, but in the future, my objective is to enable a new function to give future weather forecasting. If you have a question about the bot or about how it works, just ask me in <b>Discord -> Usuariozombie#9110</b>.</p>
+<p> At the moment, this Bot is giving real time weather forecasts, but in the future, my objective is to enable a new function to give future weather forecasting. If you have a question about the bot or about how it works, just ask me in <b>Discord -> Usuariozombie#9110</b>.</p>
 
 News --> 1.1
 -------------------
