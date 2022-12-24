@@ -1,0 +1,10 @@
+{
+	"BotToken": "BotToken",
+	"OWMAPIKey": "OWMAPIKey",
+	"Permissions": 8,
+	"Prefix": "?",
+	"Units": "metric",
+	"Whitelist": [
+		"YOURTOKEN"
+	]
+}
